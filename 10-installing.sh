@@ -2,7 +2,7 @@
 
 USERID=$(id -u )    
 
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
     echo " please run this script with root access."
     exit 1 
@@ -26,7 +26,7 @@ then
 fi
 
 
-dnf install git -y
+dnf install gitt -y
 if [ $? -ne 0 ]
 then 
     echo "installation of git...FALURE"
