@@ -14,10 +14,14 @@ dnf install mysql -y
 
 if [ $? -ne 0 ]
 then 
-    echo "installation of mysql...FALURE"
+    echo "installation of mysqll...FALURE"
     exit 1
 fi  
  
  dnf install maven -y
-
+if [ $? -ne 0 ]
+then 
+    echo "installation of git...FALURE"
+    exit 1
+fi
  echo "is script procceding?"
