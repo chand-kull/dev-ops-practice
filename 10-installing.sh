@@ -21,6 +21,14 @@ fi
  dnf install maven -y
 if [ $? -ne 0 ]
 then 
+    echo "installation of maven...FALURE"
+    exit 1
+fi
+
+
+dnf install git -y
+if [ $? -ne 0 ]
+then 
     echo "installation of git...FALURE"
     exit 1
 fi
